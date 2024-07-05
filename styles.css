@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+body{
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+}
+.main-container{
+    width: 80%;
+    background: url("/images/bg-pattern-desktop.svg") no-repeat;
+    margin: 3rem auto;
+    display: flex;
+    border-radius: 1rem;
+}
+#time-utc{
+    font-weight: 400;
+    color:hsl(0, 93%, 68%);
+}
+#day{
+    font-weight: 400;
+    color:hsl(0, 93%, 68%);
+}
+.day p{
+    padding: 0.2rem 0;
+}
+.content{
+    width: 100%;
+    padding: 3rem;
+}
+.foot ul{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    
+}
+.goals h2{
+    padding: 1rem 0;
+    color: hsl(0, 6%, 24%);
+    
+}
+.goals ul li{
+    padding: 0.5rem 0;
+    font-weight: 350;
+    color: hsl(0, 6%, 24%)
+}
+.foot ul li{
+    list-style-type: none;
+    padding-top: 1rem;
+    
+    
+}
+.foot ul li a{
+    text-decoration: none;
+    color: hsl(0, 6%, 24%);
+}
+.foot ul li a:hover{
+    text-decoration: none;
+    color: hsl(0, 93%, 68%); /* soft red */
+}
+@media (max-width: 600px) {
+    .main-container{
+       flex-direction: column-reverse;
+       justify-content: center;
+       
+    }
+  }
